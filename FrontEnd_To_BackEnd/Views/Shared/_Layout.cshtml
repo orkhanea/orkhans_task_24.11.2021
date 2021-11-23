@@ -1,0 +1,593 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.7/themes/odometer-theme-minimal.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+    <link rel="stylesheet" href="~/css/style.css">
+    <title>Home</title>
+</head>
+
+<body>
+
+    @{
+
+        if (ViewBag.isLogin != true)
+        {
+            if (ViewBag.isHomePage == true)
+            {
+
+                <header>
+                    <nav class="full-nav">
+                        <div class="responsive-nav-menu">
+                            <div class="container">
+                                <div class="row pos-rel">
+                                    <div class="col-6">
+                                        <div class="responsive-logo">
+                                            <a asp-controller="Home" asp-action="index"><img src="~/img/Home-Img/logo.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 res-menu-bar-col">
+                                        <div class="res-menu-bar">
+                                            <div class="res-menu-dots">
+                                                <div class="full-dots">
+                                                    <span class="dots dot1"></span>
+                                                    <span class="dots dot2"></span>
+                                                    <span class="dots dot3"></span>
+                                                </div>
+                                            </div>
+                                            <a class="res-menu-bar-lines" href="~/#">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <p class="innerRes-menu-bar-lines" href="~/#">X</p>
+                                            </a>
+                                            <div class="res-nav-menu">
+                                                <ul class="nav-menu-ul">
+                                                    <li>
+                                                        <a href="~/#">Home</a>
+                                                        <ul class="home-under-menu">
+                                                            <li class="home-under-menu-li">
+                                                                <h3 class="hfu-menu">With Animation</h3>
+                                                                <a href="~/#">Home One (IT Startup)</a>
+                                                                <a asp-controller="Home" asp-action="index">Home Two (IT Startup)</a>
+                                                                <a href="~/#">Home Three (IT Startup)</a>
+                                                                <a href="~/#">Home Four (IT Startup)</a>
+                                                                <a href="~/#">Home Five (Chatbot)</a>
+                                                                <a href="~/#">Home Six (Chatbot)</a>
+                                                                <a href="~/#">Home Seven (Chatbot)</a>
+                                                                <a href="~/#">Home Eight (Digital Marketing Agency)</a>
+                                                            </li>
+                                                            <li class="home-under-menu-li">
+                                                                <h3 class="hfu-menu">With Animation</h3>
+                                                                <a href="~/#">Home One (IT Startup)</a>
+                                                                <a href="~/#">Home Two (IT Startup)</a>
+                                                                <a href="~/#">Home Three (IT Startup)</a>
+                                                                <a href="~/#">Home Four (IT Startup)</a>
+                                                                <a href="~/#">Home Five (Chatbot)</a>
+                                                                <a href="~/#">Home Six (Chatbot)</a>
+                                                                <a href="~/#">Home Seven (Chatbot)</a>
+                                                                <a href="~/#">Home Eight (Digital Marketing Agency)</a>
+                                                            </li>
+                                                        </ul>
+                                                        <a class="plus" href="~/#">+</a>
+                                                    </li>
+                                                    <li><a asp-controller="About" asp-action="index">About</a></li>
+                                                    <li><a asp-controller="Pricing" asp-action="index">Pricing</a></li>
+                                                    <li>
+                                                        <a href="~/#">Pages</a>
+                                                        <ul class="pages-under-menu">
+                                                            <li class="pages-under-menu-li">
+                                                                <a asp-controller="Service1" asp-action="index">Service 1</a>
+                                                                <a asp-controller="Service2" asp-action="index">Feature 2</a>
+                                                                <a asp-controller="Team" asp-action="index">Team</a>
+                                                                <a asp-controller="Login" asp-action="index">Log In</a>
+                                                                <a href="~/#">Sign Up</a>
+                                                                <a href="~/#">FAQ</a>
+                                                                <a href="~/#">404 Error</a>
+                                                            </li>
+                                                        </ul>
+                                                        <a class="plus" href="~/#">+</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="~/#">Blog</a>
+                                                        <ul class="blog-under-menu">
+                                                            <li class="blog-under-menu-li">
+                                                                <a href="~/#">Blog Grid</a>
+                                                                <a href="~/#">Blog Right Sidebar</a>
+                                                                <a href="~/#">Blog Details</a>
+                                                            </li>
+                                                        </ul>
+                                                        <a class="plus" href="~/#">+</a>
+                                                    </li>
+                                                    <li><a href="~/#">Contact</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container container-dots-menu">
+                                <div class="row pos-rel">
+                                    <div class="col-sm-4 ms-auto">
+                                        <div class="full-dots-menu">
+                                            <div class="dots-menu">
+                                                <a href="~/#"><i class="fab fa-hotjar"></i>Get Started</a>
+                                                <a asp-controller="Login" asp-action="index"><i class="far fa-sign-in"></i>Log In</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid nav-menu-container">
+                            <div class="row nav-full-row">
+                                <div class="col-md-2 col-lg-2 col-xl-2">
+                                    <div class="nav-logo">
+                                        <a asp-controller="Home" asp-action="index"><img src="~/img/Home-Img/logo.png" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 col-lg-7 col-xl-6 nav-menu-col">
+                                    <div class="nav-menu">
+                                        <ul>
+                                            <li>
+                                                <a asp-controller="Home" asp-action="index">Home<i class="fas fa-chevron-down"></i></a>
+                                                <ul class="sub-menu">
+                                                    <li class="sub-menu-content">
+                                                        <h3>With Animation</h3>
+                                                        <a href="~/#">Home One (IT Startup)</a>
+                                                        <a href="~/#">Home Two (IT Startup)</a>
+                                                        <a href="~/#">Home Three (IT Startup)</a>
+                                                        <a href="~/#">Home Four (IT Startup)</a>
+                                                        <a href="~/#">Home Five (Chatbot)</a>
+                                                        <a href="~/#">Home Six (Chatbot)</a>
+                                                        <a href="~/#">Home Seven (Chatbot)</a>
+                                                        <a href="~/#">Home Eight (Digital Marketing Agency)</a>
+                                                    </li>
+                                                    <li class="sub-menu-content">
+                                                        <h3>With Animation</h3>
+                                                        <a href="~/#">Home One (IT Startup)</a>
+                                                        <a href="~/#">Home Two (IT Startup)</a>
+                                                        <a href="~/#">Home Three (IT Startup)</a>
+                                                        <a href="~/#">Home Four (IT Startup)</a>
+                                                        <a href="~/#">Home Five (Chatbot)</a>
+                                                        <a href="~/#">Home Six (Chatbot)</a>
+                                                        <a href="~/#">Home Seven (Chatbot)</a>
+                                                        <a href="~/#">Home Eight (Digital Marketing Agency)</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a asp-controller="About" asp-action="index">About</a>
+                                            </li>
+                                            <li>
+                                                <a asp-controller="Pricing" asp-action="index">Pricing</a>
+                                            </li>
+                                            <li>
+                                                <a href="~/#">Pages<i class="fas fa-chevron-down"></i></a>
+                                                <ul class="sub-menu sub-menu2">
+                                                    <li class="sub-menu-content">
+                                                        <a asp-controller="Service1" asp-action="index">Services 1</a>
+                                                        <a asp-controller="Service2" asp-action="index">Services 2</a>
+                                                        <a asp-controller="Team" asp-action="index">Team</a>
+                                                        <a asp-controller="Login" asp-action="index">Log In</a>
+                                                        <a href="~/#">Sign Up</a>
+                                                        <a href="~/#">FAQ</a>
+                                                        <a href="~/#">404 Error</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="~/#">Blog<i class="fas fa-chevron-down"></i></a>
+                                                <ul class="sub-menu sub-menu2">
+                                                    <li class="sub-menu-content">
+                                                        <a href="~/#">Blog Grid</a>
+                                                        <a href="~/#">Blog Right Sidebar</a>
+                                                        <a href="~/#">Blog Details</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a asp-controller="Contact" asp-action="index">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-lg-3 col-xl-4 nav-buttons-col">
+                                    <div class="nav-buttons">
+                                        <a href="~/#"><i class="fab fa-hotjar"></i>Get Started</a>
+                                        <a id="background-transparent" asp-controller="Login" asp-action="index"><i class="far fa-sign-in"></i>Log In</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <section id="get-started-under-nav">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-7 get-started-under-nav-col">
+                                    <div class="dtable">
+                                        <div class="dtable-cell">
+                                            <div class="get-started-first" id="get-started-first">
+                                                <h1 id="mq">Solve Business Challenges With IT</h1>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                                                <a class="strax-btn" href="~/#"><i class="strax-btn-i fab fa-hotjar"></i>Get Started</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="custom-carusel-col col-lg-5">
+                                    <div class="get-started-second">
+                                        <div class="owl-carousel owl-theme owl-loaded header-carusel">
+                                            <div class="owl-stage-outer">
+                                                <div class="radius-overflow">
+                                                    <div class="owl-stage">
+                                                        <div class="owl-item ">
+                                                            <div class="carusel carusel-img1"></div>
+                                                        </div>
+                                                        <div class="owl-item ">
+                                                            <div class="carusel carusel-img2"></div>
+                                                        </div>
+                                                        <div class="owl-item ">
+                                                            <div class="carusel carusel-img3"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="shape19">
+                            <img src="~/img/shapes/shape-19.png" alt="">
+                        </div>
+                        <div class="shape20">
+                            <img src="~/img/shapes/shape-20.png" alt="">
+                        </div>
+                        <div class="shape18">
+                            <img src="~/img/shapes/shape-18.png" alt="">
+                        </div>
+                        <div class="shape21">
+                            <img src="~/img/shapes/shape-21.png" alt="">
+                        </div>
+                        <div class="shape23">
+                            <img src="~/img/shapes/shape-23.png" alt="">
+                        </div>
+                        <div class="shape25">
+                            <img src="~/img/shapes/shape-25.png" alt="">
+                        </div>
+                    </section>
+                </header>
+
+            }
+            else if (ViewBag.isHomePage != true)
+            {
+
+                <header>
+                    <nav class="full-nav pricing-full-nav">
+                        <div class="responsive-nav-menu" style="background-color: white;">
+                            <div class="container">
+                                <div class="row pos-rel">
+                                    <div class="col-6">
+                                        <div class="responsive-logo">
+                                            <a asp-controller="Home" asp-action="index"><img src="img/Home-Img/logo.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 res-menu-bar-col">
+                                        <div class="res-menu-bar">
+                                            <div class="res-menu-dots">
+                                                <div class="full-dots">
+                                                    <span class="dots dot1"></span>
+                                                    <span class="dots dot2"></span>
+                                                    <span class="dots dot3"></span>
+                                                </div>
+                                            </div>
+                                            <a class="res-menu-bar-lines" href="#">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <p class="innerRes-menu-bar-lines" href="#">X</p>
+                                            </a>
+                                            <div class="res-nav-menu">
+                                                <ul class="nav-menu-ul">
+                                                    <li>
+                                                        <a href="#">Home</a>
+                                                        <ul class="home-under-menu">
+                                                            <li class="home-under-menu-li">
+                                                                <h3 class="hfu-menu">With Animation</h3>
+                                                                <a href="#">Home One (IT Startup)</a>
+                                                                <a asp-controller="Home" asp-action="index">Home Two (IT Startup)</a>
+                                                                <a href="#">Home Three (IT Startup)</a>
+                                                                <a href="#">Home Four (IT Startup)</a>
+                                                                <a href="#">Home Five (Chatbot)</a>
+                                                                <a href="#">Home Six (Chatbot)</a>
+                                                                <a href="#">Home Seven (Chatbot)</a>
+                                                                <a href="#">Home Eight (Digital Marketing Agency)</a>
+                                                            </li>
+                                                            <li class="home-under-menu-li">
+                                                                <h3 class="hfu-menu">With Animation</h3>
+                                                                <a href="#">Home One (IT Startup)</a>
+                                                                <a href="#">Home Two (IT Startup)</a>
+                                                                <a href="#">Home Three (IT Startup)</a>
+                                                                <a href="#">Home Four (IT Startup)</a>
+                                                                <a href="#">Home Five (Chatbot)</a>
+                                                                <a href="#">Home Six (Chatbot)</a>
+                                                                <a href="#">Home Seven (Chatbot)</a>
+                                                                <a href="#">Home Eight (Digital Marketing Agency)</a>
+                                                            </li>
+                                                        </ul>
+                                                        <a class="plus" href="#">+</a>
+                                                    </li>
+                                                    <li><a asp-controller="About" asp-action="index">About</a></li>
+                                                    <li><a asp-controller="Pricing" asp-action="index">Pricing</a></li>
+                                                    <li>
+                                                        <a href="#">Pages</a>
+                                                        <ul class="pages-under-menu">
+                                                            <li class="pages-under-menu-li">
+                                                                <a asp-controller="Service1" asp-action="index">Service 1</a>
+                                                                <a asp-controller="Service2" asp-action="index">Service 2</a>
+                                                                <a asp-controller="Team" asp-action="index">Team</a>
+                                                                <a asp-controller="Login" asp-action="index">Log In</a>
+                                                                <a href="#">Sign Up</a>
+                                                                <a href="#">FAQ</a>
+                                                                <a href="#">404 Error</a>
+                                                            </li>
+                                                        </ul>
+                                                        <a class="plus" href="#">+</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Blog</a>
+                                                        <ul class="blog-under-menu">
+                                                            <li class="blog-under-menu-li">
+                                                                <a href="#">Blog Grid</a>
+                                                                <a href="#">Blog Right Sidebar</a>
+                                                                <a href="#">Blog Details</a>
+                                                            </li>
+                                                        </ul>
+                                                        <a class="plus" href="#">+</a>
+                                                    </li>
+                                                    <li><a asp-controller="Contact" asp-action="index">Contact</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container container-dots-menu">
+                                <div class="row pos-rel">
+                                    <div class="col-sm-4 ms-auto">
+                                        <div class="full-dots-menu">
+                                            <div class="dots-menu">
+                                                <a href="#"><i class="fab fa-hotjar"></i>Try It Free Now</a>
+                                                <a asp-controller="Login" asp-action="index"><i class="far fa-sign-in"></i>Log In</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid nav-menu-container" style="background-color: white;">
+                            <div class="row nav-full-row">
+                                <div class="col-md-2 col-lg-2 col-xl-2">
+                                    <div class="nav-logo">
+                                        <a asp-controller="Home" asp-action="index"><img src="img/Home-Img/logo.png" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 col-lg-7 col-xl-6 nav-menu-col">
+                                    <div class="nav-menu">
+                                        <ul>
+                                            <li>
+                                                <a href="#">Home<i class="fas fa-chevron-down"></i></a>
+                                                <ul class="sub-menu">
+                                                    <li class="sub-menu-content">
+                                                        <h3>With Animation</h3>
+                                                        <a href="#">Home One (IT Startup)</a>
+                                                        <a asp-controller="Home" asp-action="index">Home Two (IT Startup)</a>
+                                                        <a href="#">Home Three (IT Startup)</a>
+                                                        <a href="#">Home Four (IT Startup)</a>
+                                                        <a href="#">Home Five (Chatbot)</a>
+                                                        <a href="#">Home Six (Chatbot)</a>
+                                                        <a href="#">Home Seven (Chatbot)</a>
+                                                        <a href="#">Home Eight (Digital Marketing Agency)</a>
+                                                    </li>
+                                                    <li class="sub-menu-content">
+                                                        <h3>With Animation</h3>
+                                                        <a href="#">Home One (IT Startup)</a>
+                                                        <a href="#">Home Two (IT Startup)</a>
+                                                        <a href="#">Home Three (IT Startup)</a>
+                                                        <a href="#">Home Four (IT Startup)</a>
+                                                        <a href="#">Home Five (Chatbot)</a>
+                                                        <a href="#">Home Six (Chatbot)</a>
+                                                        <a href="#">Home Seven (Chatbot)</a>
+                                                        <a href="#">Home Eight (Digital Marketing Agency)</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a asp-controller="About" asp-action="index">About</a>
+                                            </li>
+                                            <li>
+                                                <a asp-controller="Pricing" asp-action="index">Pricing</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Pages<i class="fas fa-chevron-down"></i></a>
+                                                <ul class="sub-menu sub-menu2">
+                                                    <li class="sub-menu-content">
+                                                        <a asp-controller="Service1" asp-action="index">Service 1</a>
+                                                        <a asp-controller="Service2" asp-action="index">Service 2</a>
+                                                        <a asp-controller="Team" asp-action="index">Team</a>
+                                                        <a asp-controller="Login" asp-action="index">Log In</a>
+                                                        <a href="#">Sign Up</a>
+                                                        <a href="#">FAQ</a>
+                                                        <a href="#">404 Error</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">Blog<i class="fas fa-chevron-down"></i></a>
+                                                <ul class="sub-menu sub-menu2">
+                                                    <li class="sub-menu-content">
+                                                        <a href="#">Blog Grid</a>
+                                                        <a href="#">Blog Right Sidebar</a>
+                                                        <a href="#">Blog Details</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a asp-controller="Contact" asp-action="index">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-lg-3 col-xl-4 nav-buttons-col">
+                                    <div class="nav-buttons">
+                                        <a href="#"><i class="fab fa-hotjar"></i>Try It Free Now</a>
+                                        <a asp-controller="Login" asp-action="index"><i class="far fa-sign-in"></i>Log In</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <section id="pricing-banner">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="banner-title">
+                                        <h2>@ViewBag.bannerTitleH</h2>
+                                        <p>@ViewBag.bannerTitleP</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </header>
+
+            }
+        }
+
+
+    }
+
+    @RenderBody()
+
+
+    @{
+        if (ViewBag.isLogin != true)
+        {
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-4 footer-custom-col">
+                            <div class="strax-about">
+                                <div class="strax-logo">
+                                    <a asp-controller="Home" asp-action="index"><img src="~/img/footer/white-logo-footer.png" alt=""></a>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-2 footer-custom-col">
+                            <div class="footer-services-nav">
+                                <h3>Company</h3>
+                                <ul class="services">
+                                    <li>
+                                        <a asp-controller="About" asp-action="index">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a asp-controller="Service1" asp-action="index">Service 1</a>
+                                    </li>
+                                    <li>
+                                        <a asp-controller="Service2" asp-action="index">Service 2</a>
+                                    </li>
+                                    <li>
+                                        <a asp-controller="Pricing" asp-action="index">Our Pricing</a>
+                                    </li>
+                                    <li>
+                                        <a href="~/#">Latest News</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-2 footer-custom-col">
+                            <div class="footer-support-nav">
+                                <h3>Support</h3>
+                                <ul class="supports">
+                                    <li>
+                                        <a href="~/#">FAQ's</a>
+                                    </li>
+                                    <li>
+                                        <a href="~/#">Privacy Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="~/#">Terms & Conditions</a>
+                                    </li>
+                                    <li>
+                                        <a href="~/#">Community</a>
+                                    </li>
+                                    <li>
+                                        <a asp-controller="Contact" asp-action="index">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 footer-custom-col">
+                            <div class="footer-contact-nav">
+                                <h3>Contact Info</h3>
+                                <ul class="contacts">
+                                    <li>Location: <a href="~/#">6th Floor, Elegant Tower, York, USA</a></li>
+                                    <li>Email: <a href="~/#">hello@strax.com</a></li>
+                                    <li>Phone: <a href="~/#">+0 (321) 984 754</a></li>
+                                </ul>
+                                <ul class="foter-socials">
+                                    <li><a href="~/#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="~/#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="~/#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="~/#"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="copyrights">
+                                <p>Copyright @@ 2021 Strax. Designed by <a href="~/#">EnvyTheme</a></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </footer>
+            <div class="go-up-btn">
+                <i class="far fa-chevron-up"></i>
+            </div>
+
+        }
+    }
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.5/odometer.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-xVVam1KS4+Qt2OrFa+VdRUoXygyKIuNWUUUBZYv+n27STsJ7oDOHJgfF0bNKLMJF" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="~/js/script.js"></script>
+</body>
+
+</html>
