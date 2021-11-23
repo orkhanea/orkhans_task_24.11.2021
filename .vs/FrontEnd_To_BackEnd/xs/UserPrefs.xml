@@ -1,26 +1,8 @@
 ﻿<Properties StartupConfiguration="{79914F71-C57E-4671-9D8E-20137E954799}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="FrontEnd_To_BackEnd/Views/Shared/_Layout.cshtml">
     <Files>
-      <File FileName="FrontEnd_To_BackEnd/Views/Shared/_Layout.cshtml" Line="579" Column="1" />
+      <File FileName="FrontEnd_To_BackEnd/Views/Shared/_Layout.cshtml" Line="565" Column="92" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="FrontEnd_To_BackEnd" expanded="True">
-            <Node name="FrontEnd_To_BackEnd" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="Contact" expanded="True" />
-                <Node name="Login" expanded="True" />
-                <Node name="Shared" expanded="True">
-                  <Node name="_Layout.cshtml" selected="True" />
-                </Node>
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.FrontEnd__To__BackEnd PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
